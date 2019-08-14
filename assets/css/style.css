@@ -38,22 +38,40 @@ body {
   width: 320px;
 }
 
-.landing-text {
+.landing-text-outer {
   position: absolute;
   width: 100%;
   top: 40%;
-  text-align: center;
   color: #fff;
+  padding: 20px;
+}
+
+.landing-text-inner {
   font-size: 35px;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
 
 .name {
   color: #ffd700;
 }
 
+.landing-text-btn {
+  margin: 10px auto;
+  font-size: 20px;
+  text-align: center;
+  width: 20%;
+  border: 1px solid #fff;
+
+}
+
 @media screen and (max-width: 400px) {
-  .landing-text {
+  .landing-text-inner {
     font-size: 23px;
+    width: 100%;
   }
 
   .landing-content img {
