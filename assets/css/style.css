@@ -1,6 +1,7 @@
 body {
-  background-image: linear-gradient(to top, lightgray 0%, #222121 100%);
-  font-family: "Blinker", sans-serif;
+  background-image: linear-gradient(to top, #fff 0%,lightgray 70%, #141414 100%);
+  /* background-color: #10e88a;  */
+  font-family: 'Cairo', sans-serif;
 }
 
 .navbar-content {
@@ -22,59 +23,71 @@ body {
   color: #fff;
   padding: 0 30px;
   font-size: 20px;
+  height: 100%;
+  font-weight: 900;
+  transition: all .2s ease-in-out;
 }
 
 .nav-tab:hover {
-  color: #ffd700;
+  color: #dc6910;
+  transform: scale(1.2);
 }
 
 .landing-content {
   height: 100vh;
   width: 100%;
-  position: relative;
 }
 
-.landing-content img {
-  width: 320px;
-}
-
-.landing-text-outer {
-  position: absolute;
-  width: 100%;
-  top: 40%;
-  color: #fff;
-  padding: 20px;
-}
-
-.landing-text-inner {
+.landing-text {
   font-size: 35px;
-  margin: 0 auto;
-  width: 50%;
-  text-align: center;
-  border: 1px solid #fff;
+  border: 2px solid #121212;
   border-radius: 10px;
+  padding: 15px 30px;
+  background-color: rgb(249,249,249);
+  font-weight: 900;
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+.landing-btn {
+  font-size: 22px;
+  border: 2px solid #121212;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 40px;
+  background-color: #dc6910;
+  color: #fff;
+  font-weight: 700;
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  transition: all .2s ease-in-out;
+}
+
+.landing-btn:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 
 .name {
-  color: #ffd700;
+  color: #dc6910;
 }
 
-.landing-text-btn {
+/* .landing-text-btn {
   margin: 10px auto;
   font-size: 20px;
-  text-align: center;
   width: 20%;
   border: 1px solid #fff;
-
-}
+} */
 
 @media screen and (max-width: 400px) {
-  .landing-text-inner {
-    font-size: 23px;
-    width: 100%;
+  .landing-text {
+    font-size: 20px;
+    width: 90%;
   }
 
-  .landing-content img {
-    width: 250px;
+  .landing-btn {
+    font-size: 18px;
   }
 }
+
+
