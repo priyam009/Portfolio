@@ -9,26 +9,24 @@
       crossorigin="anonymous"
     ></script>
     <link
-      rel="stylesheet"
+      rel="stylesheet" 
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
+
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
@@ -41,10 +39,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Blinker|Cairo|Montserrat|Raleway&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
 
   <body>
@@ -60,31 +58,125 @@
 
       <div class="d-flex justify-content-end">
         <div class="nav-item">
-          <a class="nav-link nav-tab" href="#">Home</a>
+          <a class="nav-link nav-tab page-lnk" href="#" dest="home">Home</a>
         </div>
         <div class="nav-item">
-          <a class="nav-link nav-tab" href="#">Portfolio</a>
+          <a class="nav-link nav-tab page-lnk" href="#" dest="portfolio">Portfolio</a>
         </div>
         <div class="nav-item">
-          <a class="nav-link nav-tab" href="#">Contact</a>
+          <a class="nav-link nav-tab page-lnk" href="#" dest="contact">Contact</a>
         </div>
       </div>
     </nav>
 
-    <canvas id="canvas-image-blending"></canvas>
+    <header id="home">
+      <canvas id="canvas-image-blending"></canvas>
+      <div class="landing-content d-flex flex-column justify-content-center align-items-center">
+        <div class="text-center landing-text">
+          Hello, I'm Priyam
+          <br />
+          I'm a front-end web developer
+        </div>
+        <button class="landing-btn" id="go-btn">
+          View my work
+        </button>
+      <div>
+    </header>
+        
+    <section id="portfolio" class="portfolio-head">
 
-    <div class="landing-content d-flex flex-column justify-content-center align-items-center">
-      <div class="text-center landing-text">
-        Hello, I'm <span class="name">Priyam Sahas</span>.
-        <br />
-        I'm a front-end web developer.
+      <div class="content-title d-flex justify-content-center">
+        <h2>Projects</h2>
       </div>
-      <button class="landing-btn">
-        View my work
-      </button>
-    <div>
+      
 
+      <div class="portfolio-content d-flex flex-column">
+
+        <div class="d-flex flex-row justify-content-center">
+          <div class="col-md-3 portfolio-wrapper" data-aos="fade-right" data-aos-duration= "1500" data-aos-easing="ease-in-back">
+            <a href="https://priyam009.github.io/Word-Guess-Game/" target="_blank">
+              <img class="img-fluid portfolio-image" src="./assets/images/Hangman.jpg" alt="Eat Sh*t">
+              <h5 class="portfolio-name">Eat Sh*t</h5>
+            </a>
+          </div>
+
+          <div class="col-md-3 portfolio-wrapper" data-aos="zoom-in" data-aos-duration= "1500" data-aos-easing="ease-in-back">
+            <a href="https://priyam009.github.io/Word-Guess-Game/" target="_blank">
+              <img class="img-fluid portfolio-image" src="./assets/images/trivia-game.jpg" alt="Train Schedular">
+              <h5 class="portfolio-name">Train Schedular</h5>
+            </a>
+          </div>
+
+          <div class="col-md-3 portfolio-wrapper" data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-duration= "1500">
+            <a href="https://priyam009.github.io/unit-4-game/" target="_blank">
+              <img class="img-fluid portfolio-image" src="./assets/images/poke.jpg" alt="Gifme Giphy">
+              <h5 class="portfolio-name">Gifme Giphy</h5>
+            </a>
+          </div>
+        </div> 
+    
+        <div class="d-flex flex-row justify-content-center mt-5">
+          <div class="col-md-3 portfolio-wrapper" data-aos="fade-down" data-aos-duration= "1500" data-aos-delay= "800" data-aos-easing="ease-in-back">
+            <a href="https://priyam009.github.io/TriviaGame/" target="_blank">
+              <img class="img-fluid portfolio-image" src="./assets/images/trivia-game.jpg" alt="Trivia Game">
+              <h5 class="portfolio-name">Trivia Game</h5> 
+            </a>
+          </div>
+
+          <div class="col-md-3 portfolio-wrapper" data-aos="fade-down" data-aos-duration= "1500" data-aos-delay= "800" data-aos-easing="ease-in-back">
+            <a href="https://priyam009.github.io/TriviaGame/" target="_blank">
+              <img class="img-fluid portfolio-image" src="./assets/images/RPG-game.jpg" alt="Stars Wars RPG">
+              <h5 class="portfolio-name">Stars Wars RPG</h5> 
+            </a>
+          </div>   
+
+          <div class="col-md-3 portfolio-wrapper" data-aos="fade-down" data-aos-duration= "1500" data-aos-delay= "800" data-aos-easing="ease-in-back">
+            <a href="https://priyam009.github.io/GiphyAPI/" target="_blank">
+              <img class="img-fluid portfolio-image" src="./assets/images/Hangman.jpg" alt="Hangman">
+              <h5 class="portfolio-name">Hangman</h5>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <section id="contact" class="contact-head">
+      <div class="content-title d-flex justify-content-center">
+        <h2>Contact</h2>
+      </div>
+      <div class="container contact-content">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="name" class="form-control" id="name" placeholder="John Doe" name="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="example@gmail.com" name="email">
+          </div>
+      
+          <div class="form-group">
+            <label for="msg">Message</label>
+            <textarea class="form-control" rows="5" id="msg"></textarea>
+          </div>
+      
+          <button type="submit" class="btn btn-dark form-button">Submit</button>
+        </form>
+      </div>
+
+      <footer class="footer">
+
+        <p>Copyright &copy; 2019</p>
+      </footer>
+    </section>
+
+
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="./assets/javascript/app.js"></script>
   </body>
 </html>
