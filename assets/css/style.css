@@ -75,12 +75,12 @@ body {
   background-color: rgba(102,221,170,0.7);
 }
 
-.landing-text-btn {
+/* .landing-text-btn {
   margin: 10px auto;
   font-size: 20px;
   width: 20%;
   border: 1px solid #fff;
-}
+} */
 
 #canvas-image-blending {
   z-index: -1;
@@ -99,7 +99,7 @@ body {
   width: 100%;
   /* background-color: rgba(0, 156, 184, 0.5); */
   background-color: #82848a;
-
+  /* background-color: rgba(22,108,77,0.3); */
 }
 
 .content-title {
@@ -121,8 +121,12 @@ body {
 }
 
 .portfolio-wrapper {
-  max-width: 300px;
+  max-width: 350px;
   margin: 0 30px;
+}
+
+.portfolio-wrapper a {
+  text-decoration: none;
 }
 
 .portfolio-image {
@@ -138,7 +142,15 @@ body {
   padding: 10px;
   border-radius: 0 0 10px 10px;
   font-size: 16px;
-  max-width: 300px;
+  max-width: 350px;
+}
+
+.portfolio-name:hover {
+  transition: all 0.5s ease-in;
+  -webkit-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  transform: scale(1.0);
+  background-color: rgba(102,221,170,0.7);
 }
 
 .contact-head {
@@ -173,7 +185,7 @@ body {
   background-color:#121212;
   position: absolute;
   bottom: 0px;
-  height: 100px;
+  height: 120px;
   width: 100%;
   color: #fff
 }
@@ -184,6 +196,19 @@ body {
   text-align: center;
 }
 
+.fab,
+.fas{
+  padding: 5px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.icons {
+  margin: 10px 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0 5px;
+}
 
 @media screen and (max-width: 500px) {
   .landing-text {
