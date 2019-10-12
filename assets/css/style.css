@@ -1,7 +1,10 @@
 body {
   font-family: "Raleway", sans-serif;
   background-color: #ebe6e6;
+}
 
+button:focus {
+  outline:0;
 }
 
 .navbar-content {
@@ -117,11 +120,11 @@ body {
 
 .portfolio-content {
   position: relative;
-  top: 150px;
+  top: 125px;
 }
 
 .portfolio-wrapper {
-  max-width: 350px;
+  max-width: 300px;
   margin: 0 30px;
 }
 
@@ -206,8 +209,8 @@ body {
 .icons {
   margin: 10px 10px;
   border: 1px solid #fff;
-  border-radius: 5px;
-  padding: 0 5px;
+  border-radius: 20px;
+  padding: 5px 10px;
 }
 
 @media screen and (max-width: 500px) {
