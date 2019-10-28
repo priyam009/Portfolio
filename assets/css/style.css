@@ -97,11 +97,8 @@ button:focus {
 }
 
 .portfolio-head {
-  height: 100vh;
   width: 100%;
-  /* background-color: rgba(0, 156, 184, 0.5); */
-  background-color: #82848a;
-  /* background-color: rgba(22,108,77,0.3); */
+  /* background-color: #82848a; */
 }
 
 .content-title {
@@ -111,15 +108,22 @@ button:focus {
   font-size: 28px;
   background-color: #121212;
   color: #fff;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .content-title h2 {
-  border-bottom: 2px solid rgba(255,255,255,0.7);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .portfolio-content {
   position: relative;
-  top: 125px;
+  top: 100px;
+}
+
+.portfolio-content div {
+  margin-top: 30px;
 }
 
 .portfolio-wrapper {
@@ -133,7 +137,6 @@ button:focus {
 
 .portfolio-image {
   border-radius: 10px 10px 0 0;
-  /* max-width: 300px; */
 }
 
 .portfolio-name {
