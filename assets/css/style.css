@@ -49,11 +49,15 @@ button:focus {
   border-radius: 10px;
   padding: 15px 30px;
   background-color: rgba(249, 249, 249, 0.2);
-  font-weight: 900;
-  /* box-shadow: 0 10px 16px 0 rgba(255, 255, 255, 0.2),
-    0 6px 20px 0 rgba(255, 255, 255, 0.19); */
-  /* font-family: "Dancing Script", cursive; */
   font-weight: 500;
+}
+
+.landing-div button:first-child {
+  margin-right: 30px;
+}
+
+.landing-div button:last-child {
+  margin-left: 30px;
 }
 
 .landing-btn {
@@ -62,28 +66,23 @@ button:focus {
   border-radius: 10px;
   padding: 10px 20px;
   margin-top: 40px;
-  /* background-color: rgba(227,26,109,0.5); */
   background-color: rgba(249, 249, 249, 0.2);
   color: #fff;
   font-weight: 700;
-  /* box-shadow: 0 10px 16px 0 rgba(255, 255, 255, 0.2),
-    0 6px 20px 0 rgba(255, 255, 255, 0.19); */
   transition: all 0.2s ease-in-out;
+}
+
+.landing-btn a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .landing-btn:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  background-color: rgba(102,221,170,0.7);
+  background-color: rgba(102, 221, 170, 0.7);
 }
-
-/* .landing-text-btn {
-  margin: 10px auto;
-  font-size: 20px;
-  width: 20%;
-  border: 1px solid #fff;
-} */
 
 #canvas-image-blending {
   z-index: -1;
