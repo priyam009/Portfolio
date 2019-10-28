@@ -1,3 +1,40 @@
+var firebaseConfig = {
+  apiKey: "AIzaSyD52f-UCABztH7EG0agUP78JUhEBDxAYAI",
+  authDomain: "priyam-portfolio.firebaseapp.com",
+  databaseURL: "https://priyam-portfolio.firebaseio.com",
+  projectId: "priyam-portfolio",
+  storageBucket: "priyam-portfolio.appspot.com",
+  messagingSenderId: "875730837320",
+  appId: "1:875730837320:web:db81ff0abeb5bbca4e9d7d",
+  measurementId: "G-2T9PZ5C4Q6"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+var database = firebase.database();
+
+$("#submit-button").on("click", function() {
+  event.preventDefault();
+
+  var name = $("#name")
+    .val()
+    .trim();
+  var email = $("#email")
+    .val()
+    .trim();
+  var message = $("#msg")
+    .val()
+    .trim();
+
+  $(".portfolio-form").trigger("reset");
+
+  database.ref().push({
+    name: name,
+    email: email,
+    message: message
+  });
+});
+
 var imagesrcArr = [
   "assets/images/background-screen-big-01.jpg",
   "assets/images/background-screen-small.jpg"
@@ -73,7 +110,6 @@ $(document).ready(function() {
       1000
     );
   });
-
 
   $("#go-btn").click(function() {
     $("html, body").animate(
