@@ -1,10 +1,11 @@
 body {
   font-family: "Raleway", sans-serif;
-  background-color: #ebe6e6;
+  /* background-color: #82848a; */
+  background-color: #ebebeb;
 }
 
 button:focus {
-  outline:0;
+  outline: 0;
 }
 
 .navbar-content {
@@ -19,7 +20,7 @@ button:focus {
 }
 
 .nav-face {
-  height: 60px;
+  height: 65px;
 }
 
 .nav-tab {
@@ -32,7 +33,6 @@ button:focus {
 }
 
 .nav-tab:hover {
-  /* color: #e31a6d; */
   color: #66ddaa;
   transform: scale(1.2);
 }
